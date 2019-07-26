@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 
-const TodoSchema = new Schema({
+const Todo = new Schema({
         todo_description: {
             type: String
         },
@@ -18,4 +18,4 @@ const TodoSchema = new Schema({
         }
 })
 
-mongoose.model('TodoSchema', TodoSchema)
+module.exports = mongoose.model('Todo', Todo)
